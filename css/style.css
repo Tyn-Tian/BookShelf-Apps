@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital,wght@0,400;0,700;1,400&family=Goudy+Bookletter+1911&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+.flex {
+    display: flex;
+}
+
+.gentium {
+    font-family: 'Gentium Book Basic', serif;
+}
+
+.goudy {
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    aspect-ratio: 1;
+}
+
+header h1 {
+    font-weight: 700;
+}
+
+header button {
+    width: fit-content;
+    height: fit-content;
+
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+}
+
+@media (max-width: 35em) {
+    header {
+        padding: 20px;
+        margin-bottom: 8vw;
+    }
+
+    header img {
+        width: 35px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header button .search {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (min-width: 35em) and (max-width: 45em) {
+    header {
+        padding: 25px 35px;
+        margin-bottom: 7vw;
+    }
+
+    header img {
+        width: 40px;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    header button .search {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (min-width: 45em) {
+    header {
+        display: grid;
+        justify-content: flex-start;
+        grid-template-columns: 80px 1fr 1fr;
+
+        padding: 30px 50px;
+        margin-bottom: 5vw;
+    }
+
+    header img {
+        width: 50px;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    header button {
+        justify-self: flex-end;
+    }
+
+    header button .search {
+        width: 35px;
+        height: 35px;
+    }
+}
