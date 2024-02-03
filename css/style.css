@@ -187,6 +187,63 @@ input[type="search"]::-webkit-search-results-decoration {
     padding: 15px 40px;
 }
 
+.bookshelf {
+    width: 100%;
+
+    gap: 20px;
+
+    margin-top: 50px;
+}
+
+.bookshelf > * {
+    width: 100%;
+    height: fit-content;
+
+    flex-grow: 1;
+
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
+    padding: 25px 20px;
+
+    backdrop-filter: blur(40px);
+}
+
+.bookshelf > * > *:first-child {
+    font-size: 24px;
+
+    margin-bottom: 25px;
+}
+
+.bookshelf > * > .book-card {
+    padding: 20px;
+}
+
+.bookshelf > * > .book-card h4 {
+    font-weight: 700;
+    font-size: 24px;
+
+    margin-bottom: 5px;
+}
+
+.bookshelf > * > .book-card h5 {
+    font-style: italic;
+    font-size: 20px;
+}
+
+.bookshelf > * > .book-card h6 {
+    font-size: 20px;
+
+    margin-bottom: 10px;
+}
+
+.bookshelf>*>.book-card>.btn-container {
+    gap: 5px;
+}
+
+.book-btn {
+    margin-left: -7px;
+}
+
 @media (max-width: 35em) {
     header {
         padding: 20px;
@@ -251,6 +308,28 @@ input[type="search"]::-webkit-search-results-decoration {
     .add-card .submit input {
         font-size: 20px;
     }
+
+    .bookshelf {
+        flex-direction: column;
+    }
+
+    .bookshelf > * > *:first-child {
+        font-size: 20px;
+    }
+
+    .bookshelf > * > .book-card h4 {
+        font-size: 20px;
+    }
+
+    .bookshelf > * > .book-card h5,
+    .bookshelf > * > .book-card h6 {
+        font-size: 18px;
+    } 
+
+    .book-btn {
+        width: 30px;
+        height: 30px;
+    }
 }
 
 @media (min-width: 35em) and (max-width: 45em) {
@@ -312,6 +391,11 @@ input[type="search"]::-webkit-search-results-decoration {
 
     .add-card .submit input {
         font-size: 24px;
+    }
+
+    .book-btn {
+        width: 32px;
+        height: 32px;
     }
 }
 
@@ -402,5 +486,20 @@ input[type="search"]::-webkit-search-results-decoration {
         font-size: 16px;
 
         padding: 15px 45px;
+    }
+
+    .bookshelf {
+        gap: 30px;
+    }
+
+    .bookshelf > * > *:first-child {
+        margin-bottom: 50px;
+    }
+
+    .book-btn {
+        width: 35px;
+        height: 35px;
+
+        margin-left: -5px;
     }
 }
