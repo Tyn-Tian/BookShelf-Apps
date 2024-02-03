@@ -26,24 +26,24 @@
             <input type="search" id="search-box" value="" name="search-box" placeholder="Input book title">
         </div>
         <div class="add-container flex">
-            <button class="add-btn goudy">Tambahkan Buku Baru</button>
+            <button class="add-btn goudy clear-btn">Tambahkan Buku Baru</button>
             <article class="add-card">
-                <button class="close-btn">
+                <button class="close-btn clear-btn">
                     <span class="iconify close" data-icon="fa:close" style="color: black;"></span>
                 </button>
-                <h1 class="goudy">Tambahkan Buku Baru</h1>
+                <h3 class="goudy">Tambahkan Buku Baru</h3>
                 <form id="form" class="gentium">
-                    <div class="form-element">
+                    <div class="form-element flex">
                         <label for="title">Judul</label>
                         <input type="text" id="title" name="nama" placeholder="Masukan Judul Buku" value=""
                             maxlength="50" required>
                     </div>
-                    <div class="form-element">
+                    <div class="form-element flex">
                         <label for="author">Penulis</label>
                         <input type="text" id="author" name="author" placeholder="Masukan Nama Penulis" value=""
                             maxlength="50">
                     </div>
-                    <div class="form-element">
+                    <div class="form-element flex">
                         <label for="year">Tahun</label>
                         <input type="text" id="year" placeholder="Masukan Tahun Diterbitkan" value="" maxlength="4">
                     </div>
@@ -51,8 +51,8 @@
                         <label for="finish">Selesai dibaca ?</label>
                         <input type="checkbox" id="finish" value="">
                     </div>
-                    <div class="submit">
-                        <input type="submit" value="Tambah" name="submit" id="submit-btn">
+                    <div class="submit flex">
+                        <input class="clear-btn" type="submit" value="Tambah" name="submit" id="submit-btn">
                     </div>
                 </form>
             </article>
