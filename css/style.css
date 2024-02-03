@@ -25,6 +25,16 @@ body {
     font-family: 'Goudy Bookletter 1911', serif;
 }
 
+.clear-btn {
+    width: fit-content;
+    height: fit-content;
+    
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -37,16 +47,6 @@ header img {
 
 header h1 {
     font-weight: 700;
-}
-
-header button {
-    width: fit-content;
-    height: fit-content;
-
-    border: none;
-    background-color: transparent;
-
-    cursor: pointer;
 }
 
 main {
@@ -86,13 +86,6 @@ main>*:first-child {
     position: absolute;
     top: 30px;
     right: 20px;
-    width: fit-content;
-    height: fit-content;
-
-    border: none;
-    background-color: transparent;
-
-    cursor: pointer;
 }
 
 .search-container button .close {
