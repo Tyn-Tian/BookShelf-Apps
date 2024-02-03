@@ -15,6 +15,57 @@
             <span class="iconify search" data-icon="fa:search" style="color: black;"></span>
         </button>
     </header>
+
+    <main class="flex">
+        <h2 class="gentium">Mau menambahkan buku hari ini ?</h2>
+        <div class="search-container gentium">
+            <h3>Cari Judul Buku</h3>
+            <button class="search-close-btn">
+                <span class="iconify close" data-icon="fa:close" style="color: black;"></span>
+            </button>
+            <input type="search" id="search-box" value="" name="search-box" placeholder="Input book title">
+        </div>
+        <div class="add-container flex">
+            <button class="add-btn goudy">Tambahkan Buku Baru</button>
+            <article class="add-card">
+                <button class="close-btn">
+                    <span class="iconify close" data-icon="fa:close" style="color: black;"></span>
+                </button>
+                <h1 class="goudy">Tambahkan Buku Baru</h1>
+                <form id="form" class="gentium">
+                    <div class="form-element">
+                        <label for="title">Judul</label>
+                        <input type="text" id="title" name="nama" placeholder="Masukan Judul Buku" value=""
+                            maxlength="50" required>
+                    </div>
+                    <div class="form-element">
+                        <label for="author">Penulis</label>
+                        <input type="text" id="author" name="author" placeholder="Masukan Nama Penulis" value=""
+                            maxlength="50">
+                    </div>
+                    <div class="form-element">
+                        <label for="year">Tahun</label>
+                        <input type="text" id="year" placeholder="Masukan Tahun Diterbitkan" value="" maxlength="4">
+                    </div>
+                    <div class="form-element-check">
+                        <label for="finish">Selesai dibaca ?</label>
+                        <input type="checkbox" id="finish" value="">
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Tambah" name="submit" id="submit-btn">
+                    </div>
+                </form>
+            </article>
+        </div>
+        <article class="flex bookshelf">
+            <div class="unfinish-container">
+                <h3 class="goudy">Belum Selesai dibaca</h3>
+            </div>
+            <div class="finish-container">
+                <h3 class="goudy">Selesai dibaca</h3>
+            </div>
+        </article>
+    </main>
     
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <script src="js/index.js"></script>
