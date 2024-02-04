@@ -184,6 +184,7 @@ input[type="search"]::-webkit-search-results-decoration {
     font-weight: 700;
 
     border-radius: 10px;
+    background: rgba(255, 255, 255, 0.5);
     padding: 15px 40px;
 }
 
@@ -195,7 +196,7 @@ input[type="search"]::-webkit-search-results-decoration {
     margin-top: 50px;
 }
 
-.bookshelf > * {
+.bookshelf>* {
     width: 100%;
     height: fit-content;
 
@@ -208,29 +209,29 @@ input[type="search"]::-webkit-search-results-decoration {
     backdrop-filter: blur(40px);
 }
 
-.bookshelf > * > *:first-child {
+.bookshelf>*>*:first-child {
     font-size: 24px;
 
     margin-bottom: 25px;
 }
 
-.bookshelf > * > .book-card {
+.bookshelf>*>.book-card {
     padding: 20px;
 }
 
-.bookshelf > * > .book-card h4 {
+.bookshelf>*>.book-card h4 {
     font-weight: 700;
     font-size: 24px;
 
     margin-bottom: 5px;
 }
 
-.bookshelf > * > .book-card h5 {
+.bookshelf>*>.book-card h5 {
     font-style: italic;
     font-size: 20px;
 }
 
-.bookshelf > * > .book-card h6 {
+.bookshelf>*>.book-card h6 {
     font-size: 20px;
 
     margin-bottom: 10px;
@@ -326,18 +327,18 @@ footer {
         flex-direction: column;
     }
 
-    .bookshelf > * > *:first-child {
+    .bookshelf>*>*:first-child {
         font-size: 20px;
     }
 
-    .bookshelf > * > .book-card h4 {
+    .bookshelf>*>.book-card h4 {
         font-size: 20px;
     }
 
-    .bookshelf > * > .book-card h5,
-    .bookshelf > * > .book-card h6 {
+    .bookshelf>*>.book-card h5,
+    .bookshelf>*>.book-card h6 {
         font-size: 18px;
-    } 
+    }
 
     .book-btn {
         width: 30px;
@@ -505,7 +506,7 @@ footer {
         gap: 30px;
     }
 
-    .bookshelf > * > *:first-child {
+    .bookshelf>*>*:first-child {
         margin-bottom: 50px;
     }
 
