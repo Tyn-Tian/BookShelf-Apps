@@ -2,6 +2,7 @@ const unfinishContainer = document.querySelector('.unfinish-container');
 const finishContainer = document.querySelector('.finish-container');
 const BOOK_ITEMID = 'itemId';
 
+const formTitle = document.querySelector('.add-card h3');
 const submitBtn = document.getElementById('submit-btn');
 const selesaiCheck = document.querySelector('.form-element-check');
 
@@ -23,7 +24,7 @@ const selesaiDibaca = document.getElementById('finish');
 
 function addNewBook() {
     if (!editValue) {
-        const bookObject = composeBookObject(judul.value, penulis.value, tahun.value, selesaiDibaca.checked);
+        const bookObject = composeBookObject(judul.value, penulis.value, parseInt(tahun.value), selesaiDibaca.checked);
         const book = renderNewBook(judul.value, penulis.value, tahun.value, selesaiDibaca.checked);
 
         book[BOOK_ITEMID] = bookObject.id;
@@ -35,7 +36,7 @@ function addNewBook() {
 
         editID.title = editJudul.innerText;
         editID.author = editPenulis.innerText;
-        editID.year = editTahun.innerText;
+        editID.year = parseInt(editTahun.innerText);
     }
 
     setBackToDefault();
@@ -134,6 +135,7 @@ function addEventEditBtn(btnContainer) {
         judul.value = editJudul.innerText;
         penulis.value = editPenulis.innerText;
         tahun.value = editTahun.innerText;
+        formTitle.innerText = 'Edit Buku';
         submitBtn.value = 'Edit';
     });
 }
@@ -159,6 +161,7 @@ function setBackToDefault() {
     judul.value = '';
     penulis.value = '';
     tahun.value = '';
+    formTitle.innerText = 'Tambahkan Buku Baru'
     submitBtn.value = 'Tambah';
     selesaiDibaca.checked = false;
     editValue = false;
